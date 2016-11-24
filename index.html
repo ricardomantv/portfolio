@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/portfolio.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body onload="loadMasonry();">
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -30,13 +31,41 @@
     </nav>
 
     <div class="page-header">
-      <h1>Page Header</h1>
+      <h1>My Portfolio</h1>
+    </div>
+
+    <div id="wrapper">
+      <div id="container">
+        <div class="grid">
+
+          <div class="grid-item">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/200/200/abstract" alt="">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>blah blah blah</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="thumbnail">
+              <img src="http://lorempixel.com/420/200/abstract" alt="">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>blah blah blah</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/portfolio.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
   </body>
   <footer>
     <p>&copy; Ricardo Tucker</p>
