@@ -3,10 +3,14 @@
 /* IDs */
 
 /* Classes */
-.grid {
-  margin: 0 auto;
+.caption h3 {
+  width: 350px;
 }
 
-.grid-item {
-  padding: 5px;
+.caption p {
+  width: 350px;
+}
+
+.grid {
+  margin: 0 auto;
 }
